@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="index.html" />
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title> Login</title>
+</head>
+
+<body class="Log">
+    <div class="login-box">
+        <img src="images/Logo.png" class="avatar">
+        <h1>Login</h1>
+        <form role="form" onsubmit="signIn(event);" autocomplete="off">
+            <!-- USERNAME INPUT -->
+            <label for="username">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Email Address" required>
+            <!-- PASSWORD INPUT -->
+            <label for="password">Password</label>
+            <input type="password" id="pwd" name="Pass" placeholder="Enter Password" required>
+            <button type="submit">Sing In </button>
+            <a href="pages/Registro.html">Don't have An account?</a>
+        </form>
+    </div>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+
+</html>

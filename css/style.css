@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+header,
+.alert {
+    z-index: 100;
+}
+
+.hide,
+.remove {
+    display: none;
+}
+
+
+/* Menu */
+
+#menus {
+    background-color: rgb(255, 208, 0);
+    display: block;
+}
+
+#menus img {
+    height: 50px;
+    width: 100px;
+}
+
+#menu {
+    position: absolute;
+    right: 15px;
+}
+
+nav {
+    display: inline-block;
+    text-align: left;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a {
+    display: block;
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(209, 47, 101);
+    border-bottom: 3px solid #760001;
+}
+
+
+/*Secion, Aside, Footer*/
+
+.inde {
+    border-color: #020303;
+    width: 45%;
+    background: rgb(0, 0, 0);
+    padding: 90px;
+    float: left;
+    height: 600px;
+}
+
+.inde img {
+    height: 300px;
+    width: 300px;
+}
+
+.inde .botons {
+    width: 60%;
+    background: #c5ba1f;
+    border: none;
+    padding: 20px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(238, 222, 0);
+    text-align: center;
+    margin-top: 100px;
+}
+
+#asidetitle {
+    padding: 30%;
+    color: rgb(238, 222, 0);
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#Parrafo {
+    color: whitesmoke;
+}
+
+aside {
+    border-color: #020303;
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    margin-left: 20px;
+    padding: 1%;
+    background-color: rgb(0, 0, 0);
+}
+
+.Aside img {
+    height: 300px;
+    width: 700px;
+}
+
+
+/* CSS Productos*/
+
+.lbl-menu {
+    width: 10%;
+    height: 300%;
+    background: #234;
+    float: left;
+}
+
+.lbl-menu label {
+    display: block;
+    padding: 40px;
+    color: rgb(238, 222, 0);
+    cursor: pointer;
+    transition: all 400ms ease;
+    height: 140px;
+}
+
+.lbl-menu label.hover {
+    background: #28435d;
+}
+
+.content {
+    width: 90%;
+    float: left;
+}
+
+.content div {
+    position: relative;
+    line-height: 1.8;
+    transition: all 600ms ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.90);
+    padding: 30px;
+    background: rgb(0, 0, 0);
+    padding-bottom: 40px;
+}
+
+#radio1,
+#radio2,
+#radio3 {
+    display: none;
+}
+
+#radio1:checked~.tab1 {
+    background-image: url(../images/Vod.png);
+    color: black;
+    display: -webkit-inline-flex;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+#radio2:checked~.tab2 {
+    color: black;
+    background-image: url(../images/CER.png);
+    display: -webkit-inline-flex;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+#radio3:checked~.tab3 {
+    color: black;
+    background-image: url(../images/WHIS.png);
+    display: -webkit-inline-flex;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+#pro {
+    text-align: center;
+    height: 200px;
+    width: 300px;
+}
+
+
+/*CSS Cocteles*/
+
+#nu1,
+#nu2,
+#nu3 {
+    width: 200px;
+    height: 200px;
+}
+
+#TI {
+    color: rgb(238, 222, 0);
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.row2cols {
+    border-color: rgb(255, 208, 0);
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.row2cols label {
+    background-color: black;
+    color: blanchedalmond;
+    padding: 10px;
+    text-align: left;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr, 4fr, 1fr;
+}
+
+.grid_header {
+    background-color: red;
+    grid-column: 1/ span 3;
+    text-align: center;
+}
+
+.grid_leftaside {
+    background-color: red;
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+}
+
+.grid_rigthaside {
+    background-color: red;
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+}
+
+
+/*CSS formulario*/
+
+.regis {
+    background-image: url('../images/fondo.jpg');
+}
+
+.form-register {
+    width: 400px;
+    background: #020303;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: rgb(238, 222, 0);
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 100%;
+    background: #111920;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #dbeb00;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 20px;
+    color: rgb(238, 234, 11);
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .boton {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+    cursor: pointer;
+    background: #dddfc4;
+    color: rgb(38, 135, 226);
+}
+
+.form-register button[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+
+/*css login*/
+
+.Log {
+    background-image: url('../images/fondo5.jpg');
+}
+
+.login-box {
+    width: 380px;
+    height: 420px;
+    background: #020303;
+    border-radius: 20px;
+    color: rgb(238, 222, 0);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.login-box .avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 70%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.login-box label {
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+    display: block;
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"],
+.login-box input[type="email"] {
+    width: 93%;
+    background: #111920;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #ffee00;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+.login-box button[type="submit"] {
+    width: 100%;
+    background: #dddfc4;
+    border: none;
+    padding: 12px;
+    color: rgb(38, 135, 226);
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.login-box button[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(238, 234, 11);
+}
+
+.login-box a:hover {
+    color: #fff;
+}
+
+
+/*carrito*/
+
+.description {
+    height: 25px;
+    overflow: hidden;
+    transition: height .3s ease-in .3s;
+}
+
+.description:hover {
+    height: 80px;
+}
+
+.card-img-top {
+    height: 90%;
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+
+.carrito {
+    min-height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.table__productos {
+    display: flex;
+}
+
+.table__productos>img {
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+.table__cantidad>input {
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
